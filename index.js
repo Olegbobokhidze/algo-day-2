@@ -25,3 +25,14 @@ const DeleteExcl = (s) => {
   const DeleteExc = s.slice(s, find);
   return DeleteExc;
 };
+// or
+const DeleteExcl1 = (s) => {
+  let result = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] !== "!") {
+      result.push(s[i]);
+    }
+  }
+  const k = result.join("");
+  return k;
+};
