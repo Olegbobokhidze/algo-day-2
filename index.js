@@ -17,3 +17,11 @@ const findPeopleInBus = (arr) => {
   const second = peopleOut.reduce((acc, curr) => acc + curr, 0);
   return first - second;
 };
+
+// delete excl mark
+
+const DeleteExcl = (s) => {
+  const find = s.indexOf("!");
+  const DeleteExc = s.slice(s, find);
+  return DeleteExc;
+};
